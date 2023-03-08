@@ -1,0 +1,193 @@
+#tickets {
+  height: fit-content !important;
+}
+
+#tickets_container_with_cols {
+  display: inline-block;
+  width: 130vh;
+  height: 180vh;
+  position: relative;
+}
+
+#tickets_container_with_rows {
+  display: inline-block;
+  width: 130vh;
+  height: fit-content;
+  position: relative;
+}
+
+.column_1, .column_2, .column_3 {
+  display: inline-block;
+  width: 33%;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+}
+
+.row_1, .row_2, .row_3 {
+  display: inline-block;
+  width: 100%;
+  height: fit-content;
+}
+
+.column_1 {
+  left: 0;
+}
+
+.column_2 {
+  left: 43vh;
+}
+
+.column_3 {
+  left: 86vh;
+}
+
+.column_1 .ticket {
+  background-color: var(--background_color);
+}
+
+.column_2 .ticket {
+  background-color: var(--other_color);
+}
+
+.column_3 .ticket {
+  background-color: var(--color);
+}
+
+.yellow {
+  background-color: var(--other_color);
+}
+
+.green {
+  background-color: var(--color);
+}
+
+.ticket {
+  display: inline-block;
+  width: 40vh;
+  height: fit-content !important;
+  vertical-align: top;
+  border: .1vh solid var(--color);
+  border-radius: 1vh;
+  padding: 0 3vh;
+  margin: 0 1.5vh 3vh 1.5vh;
+  transition: .3s;
+}
+
+.ticket:hover .ticket_button {
+  background-color: black;
+  color: white;
+  font-weight: normal;
+}
+
+.ticket ul {
+  font-size: calc(.2vw + 1.2vh + 3px);
+  text-align: left;
+}
+
+.ticket .in_paragraph_title {
+  align-items: center;
+  text-align: center;
+  margin: 4vh !important;
+}
+
+.ticket_price {
+  font-size: calc(.5vw + 3.4vh + 5px);
+  text-align: center;
+  margin-top: 3vh;
+}
+
+.ticket_price p {
+  display: inline;
+  font-size: calc(.2vw + 1.5vh + 2px);
+  font-family: "Poppins";
+}
+
+.ticket_price span {
+  opacity: .5;
+}
+
+.price_caption {
+  font-size: calc(.1vw + 1vh + 1px);
+  text-align: center;
+  opacity: .6;
+}
+
+.ticket_button {
+  display: inline-grid;
+  width: 34vh;
+  height: calc(.6vw + 4.5vh + 6px);
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  border: .1vh solid black;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: calc(.2vw + 1.5vh + 2px);
+  letter-spacing: .2vh;
+  border-radius: .8vh;
+  margin: 3vh 0;
+  transition: .3s;
+}
+
+@media screen and (max-width: 100vh) {
+  #tickets_container_with_rows {
+    margin-top: 6vh;
+    width: 100vw;
+    height: fit-content;
+  }
+
+  .column_1 {
+    left: 7vw;
+  }
+
+  .column_2 {
+    left: 7vw;
+    top: 180vh !important;
+  }
+
+  .column_3 {
+    left: 7vw;
+    top: 360vh !important;
+  }
+
+  .ticket {
+    width: 86vw !important;
+    margin-left: 0 !important
+  }
+}
+
+.ticket_group {
+  display: inline-block;
+  width: 60vw !important;
+  height: 100%;
+  margin: 3vh 0 2vh 0;
+  text-align: center;
+  font-size: calc(.2vw + 1.5vh + 2px);
+  font-family: "Poppins";
+}
+
+#ticket_steps_container {
+  display: grid;
+  width: 100%;
+  height: fit-content;
+  place-items: center;
+  margin: 5vh 0;
+}
+
+#ticket_steps_container p {
+  display: inline-block;
+  width: fit-content;
+  max-width: 80vw;
+  height: 100%;
+  text-align: left;
+  font-size: calc(.2vw + 1.5vh + 2px);
+  font-family: "Poppins";
+}
+
+#ticket_steps_container p span {
+  display: inline-block;
+  width: 100%;
+  text-align: center !important;
+  font-size: calc(.3vw + 1.7vh + 3px);
+}

@@ -1,0 +1,12 @@
+:root {
+  --background_color: rgb(255, 255, 255);
+  --color: rgba(0, 153, 204, 1);
+  --other_color: rgb(230, 77, 0);
+  --gray: rgb(170, 170, 170);
+  --light_color: rgb(230, 77, 0);
+  --background_color_o95: rgba(255, 255, 255, .95);
+  --background_color_o99: rgba(255, 255, 255, .99);
+  --color_o90: rgba(0, 153, 204, .9);
+  --gray_o90: rgba(170, 170, 170, .9);
+  --gray_o50: rgba(170, 170, 170, .8);
+}

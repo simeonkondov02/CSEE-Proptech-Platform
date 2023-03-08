@@ -1,0 +1,56 @@
+#navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99 !important;
+}
+
+#main_nav {
+  position: relative;
+}
+
+.nav_links {
+  position: fixed;
+  top: 36vh;
+  left: -24vh;
+  transform: rotate(90deg);
+}
+
+.nav_item {
+  display: inline;
+  transform: translate(200px, 0) !important;
+}
+
+.nav_link {
+  position: relative;
+  font-family: "Heebo";
+  display: inline;
+  padding: 3vh 1vh;
+  font-size: 2.3vh;
+  color: rgba(0, 0, 0, 1);
+  transition: .3s;
+  text-shadow: 0px 0px 5px var(--background);
+}
+
+.nav_link:hover {
+  color: rgb(0, 170, 255);
+}
+
+#nav_logo {
+  display: inline-block;
+  height: 12vh;
+  position: absolute;
+  top: 1vh;
+  left: 1vh;
+  filter: drop-shadow(3px 6px 9px rgb(10, 10, 10));
+}
+
+.nav_item::after {
+  display: inline-block;
+  width: 10vh;
+  height: 10vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+}

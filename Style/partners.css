@@ -1,0 +1,39 @@
+.partners {
+  display: inline-block;
+  width: 70%;
+  height: 20vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1vh;
+}
+
+.partner_logo {
+  display: inline-block;
+  width: 30vh;
+  height: 18vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: .2s;
+}
+
+.partner_logo:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 130vh) {
+  .partners {
+    display: inline-grid;
+    width: 30vh;
+    height: 60vh;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 0 calc(50% - 15vh);
+  }
+  .partner_logo {
+    margin: 0;
+    padding: 0;
+  }
+}

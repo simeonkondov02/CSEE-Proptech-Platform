@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="The only international PropTech Conference in South-East Europe unites the tech companies and property
+                                      developers from the region in order to foster their business developent and innovation. PropTech Bulgaria
+                                      is the driver behind this endeavour.">
+    <meta name="keywords" content="south-east, europe, proptech, bulgaria, romania, czech republic, slovakia, greece, italy, austria">
+    <meta name="author" content="Simeon Kondov, simeonkondov2@gmial.com">
+
+    <link rel="icon" href="../Resurces/Images/Logos/conferenceLogo.png">
+
+    <title>The only South-East European PropTech stage</title>
+
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/fonts.css">
+    <link rel="stylesheet" href="../Style/titleScreen.css">
+    <link rel="stylesheet" href="../Style/title.css">
+    <link rel="stylesheet" href="../Style/intro.css">
+    <link rel="stylesheet" href="../Style/navigation.css">
+    <link rel="stylesheet" href="../Style/containers.css">
+    <link rel="stylesheet" href="../Style/scrollbar.css">
+    <link rel="stylesheet" href="../Style/timer.css">
+    <link rel="stylesheet" href="../Style/card.css">
+    <link rel="stylesheet" href="../Style/backgroundVideo.css">
+    <link rel="stylesheet" href="../Style/paragraphs.css">
+    <link rel="stylesheet" href="../Style/props.css">
+    <link rel="stylesheet" href="../Style/iframes.css">
+    <link rel="stylesheet" href="../Style/button.css">
+    <link rel="stylesheet" href="../Style/speakers.css">
+    <link rel="stylesheet" href="../Style/timeline.css">
+    <link rel="stylesheet" href="../Style/recomendations.css">
+    <link rel="stylesheet" href="../Style/footer.css">
+    <link rel="stylesheet" href="../Style/colors2021.css">
+    <link rel="stylesheet" href="../Style/link.css">
+    <link rel="stylesheet" href="../Style/scrollToTopButton.css">
+    <link rel="stylesheet" href="../Style/trailer.css">
+    <link rel="stylesheet" href="../Style/partners.css">
+    <link rel="stylesheet" href="../Style/popUpWindow.css">
+    <link rel="stylesheet" href="../Style/slider.css">
+
+    <script type="text/javascript" src="../Script/timer.js"></script>
+    <script type="text/javascript" src="../Script/showSpeakers.js"></script>
+    <script type="text/javascript" src="../Script/timeLine.js"></script>
+    <script type="text/javascript" src="../Script/partners.js"></script>
+    <script type="text/javascript" src="../Script/popUpWindow.js"></script>
+    <script type="text/javascript" src="../Script/slider.js"></script>
+
+  </head>
+  <body style="background-image: url('../Resurces/Images/Backgrounds/background2021.jpg');">
+
+    <main id="navigation">
+      <nav id="main_nav">
+        <img id="nav_logo" src="../Resurces/Images/Logos/conferenceLogo.png">
+
+        <ul class="nav_links">
+          <li class="nav_item"><a class="nav_link" href="#">Home</a></li>
+          <li class="nav_item"><a class="nav_link" href="../../index.html">Map</a></li>
+          <li class="nav_item"><a class="nav_link" href="#corporative_video">Why</a></li>
+          <li class="nav_item"><a class="nav_link" href="#speakers">Speakers</a></li>
+          <li class="nav_item"><a class="nav_link" href="#time_line">Timeline</a></li>
+          <li class="nav_item"><a class="nav_link" href="#tickets">Tickets</a></li>
+          <li class="nav_item"><a class="nav_link" href="#partners">Partners</a></li>
+          <li class="nav_item"><a class="nav_link" href="venue.html">Venue</a></li>
+          <li class="nav_item" style="display: none"><a class="nav_link" href="#register">Tickets</a></li>
+        </ul>
+      </nav></main>
+
+    <main id="title_screen" style="background: url('../Resurces/Images/Backgrounds/7.png')">
+      <h2 class="main_title">Hybrid <span>Venue</span></h2></main>
+
+    <main id="intro">
+      <div id="parallax"></div>
+
+      <script type="text/javascript">
+          (function () {
+              // Add event listener
+              document.addEventListener("mousemove", parallax);
+              const elem = document.querySelector("#parallax");
+              // Magic happens here
+              function parallax(e) {
+                  let _w = window.innerWidth / 2;
+                  let _h = window.innerHeight / 2;
+                  let _mouseX = e.clientX;
+                  let _mouseY = e.clientY;
+                  let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
+                  let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+                  let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+                  let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+                  console.log(x);
+                  elem.style.backgroundPosition = x;
+              }
+
+          })();
+      </script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+              integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+              crossorigin="anonymous"></script>
+
+      <script src="../Script/script.js"></script></main>
+
+    <!-- <main class="main_container first" id="trailer">
+      <video controls autoplay class="full_width_video">
+        <source src="../Resurces/Videos/venue.mp4" type="video/mp4">
+      </video></main> -->
+
+    <main class="main_container" id="info">
+
+      <h3 class="in_paragraph_title">We are hybrid</h3>
+
+      <p class="paragraph">
+        Speakers, panelists, moderators and our partners can watch the live-stream on site at Missia 23 where the Conference production will be broadcasted.
+        They can use the co-working area, top-roof bar, and the garden for work and meetings while at the Conference.
+      </p>
+
+      </section></main>
+
+    <main class="main_container" id="gallery">
+
+      <section class="image_gallery">
+
+        <div class="image_container">
+
+          <ul class="image_list">
+            <li class="image_item current_image" onclick="nextImage()"><img src="../Resurces/Images/Others/Venue/2.jpg"></li>
+            <li class="image_item" onclick="nextImage()"><img src="../Resurces/Images/Others/Venue/4.jpg"></li>
+            <li class="image_item" onclick="nextImage()"><img src="../Resurces/Images/Others/Venue/5.jpg"></li>
+            <li class="image_item" onclick="nextImage()"><img src="../Resurces/Images/Others/Venue/6.jpg"></li>
+            <li class="image_item" onclick="nextImage()"><img src="../Resurces/Images/Others/Venue/7.jpg"></li>
+            <li class="image_item" onclick="nextImage()"><img src="../Resurces/Images/Others/Venue/8.jpg"></li>
+          </ul>
+
+          <div class="controllers">
+
+            <aside class="previous_btn" onclick="previousImage()">
+              <img src="../Resurces/Images/Icons/previous.png">
+            </aside>
+
+            <aside class="next_btn" onclick="nextImage()">
+              <img src="../Resurces/Images/Icons/next.png">
+            </aside>
+
+          </div>
+
+        </div>
+
+      </section>
+    </div></main>
+
+    <main id="footer">
+
+      <div class="footer_content" id="logo_left">
+
+        <div>
+          <img src="../Resurces/Images/Logos/conferenceLogo.png">
+
+          <p>All Rights Reserved. PropTech Bugaria 2018 - 2022</p>
+        </div>
+
+      </div>
+
+      <div class="footer_content" id="links_middle">
+
+          <div>
+              <a class="footer_links" target="_blank" href="../../podcasts.html">
+                  Watch CSEE Podcast
+                  <svg viewBox="0 0 70 10">
+                      <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                  </svg>
+              </a>
+
+              <br>
+              <a class="footer_links" target="_blank" href="../2021/index.html">
+                  Watch 2021 Conference
+                  <svg viewBox="0 0 70 10">
+                      <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                  </svg>
+              </a>
+
+              <br>
+              <a class="footer_links" target="_blank" href="../2021/statsAndPhotos.html">
+                  See 2021 Conference speakers, stats & photos
+                  <svg viewBox="0 0 70 10">
+                      <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                  </svg>
+              </a>
+
+              <br>
+              <a class="footer_links" target="_blank" href="../2022/stats.html">
+                  See 2022 Conference speakers, stats & photos
+                  <svg viewBox="0 0 70 10">
+                      <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                  </svg>
+              </a>
+
+              <br>
+              <a class="footer_links" target="_blank" href="http://proptechbulgaria.eu">
+                  PropTech Bulgaria
+                  <svg viewBox="0 0 70 10">
+                      <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                  </svg>
+              </a>
+          </div>
+
+      </div>
+
+      <div class="footer_content" id="social_media_links_right">
+
+        <div>
+          <a class="social_media_link" target="_blank" href="https://www.facebook.com/proptechbulgaria/"><img src="../Resurces/Images/Icons/facebook.png"></a>
+          <a class="social_media_link" target="_blank" href="https://www.instagram.com/proptech_bulgaria/"><img src="../Resurces/Images/Icons/instagram.png"></a>
+          <a class="social_media_link" target="_blank" href="https://www.linkedin.com/company/proptech-bulgaria/"><img src="../Resurces/Images/Icons/linkedin.png"></a>
+          <a class="social_media_link" target="_blank" href="https://twitter.com/proptech_bg"><img src="../Resurces/Images/Icons/twitter.png"></a>
+          <a class="social_media_link" target="_blank" href="https://www.youtube.com/channel/UC0n_8hJ_opqCj5EBXItahaA"><img src="../Resurces/Images/Icons/youtube.png"></a>
+        </div>
+
+      </div></main>
+
+    <main id="dev_by">
+      <a target="_blank" href="https://www.linkedin.com/in/simeon-kondov-43445a1aa/"><p>Developed by <b>Simeon Kondov</b></p></a> </main>
+
+    <a id="scroll_to_top_btn" href="#">
+      <img src="../Resurces/Images/Icons/scrollToTopArrow.png"></a>
+
+    <br>
+
+  </body>
+</html>

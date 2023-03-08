@@ -1,0 +1,77 @@
+.reports_container, #conferences_container {
+  display: inline-grid;
+  width: calc(30vh + 10vw);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 2vh;
+  align-items: center;
+  margin-top: 5vh;
+  text-align: center;
+  overflow: auto;
+}
+
+#conferences_container {
+  display: inline-grid;
+  width: calc(30vh + 10vw);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 5vh;
+  align-items: center;
+  text-align: center;
+  overflow: auto;
+}
+
+.report {
+  width: 100%;
+  height: 10vh;
+  margin: 1vh 0;
+  background-color: rgba(0, 0, 0, .4);
+  border-radius: 1vh;
+}
+
+.report_image {
+  width: 15vh;
+  height: 10vh;
+  float: left;
+  border-radius: 1vh;
+}
+
+.report_name {
+  display: inline-grid;
+  width: calc(15vh + 10vw);
+  height: 10vh;
+  float: right;
+  place-items: center;
+  align-items: center;
+  text-align: left;
+  padding: 1vh;
+  font-size: calc(.2vw + 1.5vh + 2px);
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  color: white;
+}
+
+.report_name {
+  display: inline;
+}
+
+@media screen and (max-width: 130vh) {
+  .reports_container, #conferences_container {
+    display: inline-grid;
+    width: 80%;
+    height: fit-content;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: 0 10%;
+  }
+  .report_name {
+    display: inline-grid;
+    width: calc(100% - 15vh);
+    height: 10vh;
+    align-items: center;
+    text-align: left;
+  }
+}

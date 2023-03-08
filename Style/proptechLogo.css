@@ -1,0 +1,49 @@
+.proptech_logo {
+  display: inline-grid;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  padding-top: 10vh;
+  text-align: center;
+}
+
+#conferences_logo {
+  padding-top: 50vh;
+}
+
+.proptech_logo img {
+  width: calc(14vh + 14vw)
+}
+
+.proptech_logo a {
+  font-size: calc(.2vw + 1.5vh + 2px);
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0 0 5px black,
+               0 0 10px black,
+               0 0 15px black;
+  transition: .2s;
+}
+
+.proptech_logo a:hover {
+  transform: scale(1.2);
+}
+
+.proptech_logo a b {
+  text-transform: none;
+}
+
+@media screen and (max-width: 130vh) {
+  .proptech_logo, #conferences_logo {
+    display: inline-grid;
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    place-items: center;
+    text-align: center;
+    padding-top: 0;
+    margin-bottom: 15%;
+  }
+}

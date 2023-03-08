@@ -1,0 +1,17 @@
+#more_2021, #more_2020, #more_2021_1 {
+  display: none;
+}
+
+.show {
+  display: inline !important;
+}
+
+@media screen and (min-width: 100vh) {
+  #more_2021, #more_2020 {
+    display: inline !important;
+  }
+
+  #show_more_2021_btn, #show_more_2020_btn {
+    display: none !important;
+  }
+}

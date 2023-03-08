@@ -1,0 +1,51 @@
+.scope_container {
+  display: grid;
+  width: 70%;
+  margin: 0 15%;
+  gap: 100px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+  margin-bottom: 10vh;
+}
+
+.scope_item {
+  display: inline-grid;
+  place-items: center;
+  margin: 1vh;
+  padding: 4vh 2vh;
+  border-radius: 1vh;
+  border: .1vh solid var(--color);
+  transition: .2s;
+}
+
+.scope_item:hover {
+  border: .1vh solid var(--other_color);
+}
+
+.scope_description {
+  font-size: calc(.3vw + 1.7vh + 2px);
+  font-family: "Poppins";
+}
+
+
+@media screen and (max-width: 1360px) {
+  .scope_container {
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". .";
+  }
+}
+
+@media screen and (max-width: 100vh) {
+  .scope_container {
+    grid-template-areas:
+      "."
+      "."
+      "."
+      "."
+      "."
+      ".";
+  }
+}

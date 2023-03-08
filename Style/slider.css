@@ -1,0 +1,104 @@
+.image_gallery {
+  display: inline-block;
+  width: 60vw;
+  height: 36vw;
+  position: relative;
+  background-color: #ddd;
+  overflow: hidden;
+  border-radius: 2vh;
+}
+
+.image_item {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 18vw;
+  left: 30vw;
+  transition: .2s;
+  background-color: #000;
+}
+
+.image_item video {
+  width: 100%;
+  height: 100%;
+}
+
+.current_image {
+  width: 60vw;
+  height: 36vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.controllers {
+  position: absolute;
+  top: 0;
+}
+
+.controllers aside {
+  display: inline-grid;
+  height: 10vw;
+  width: 5vh;
+  align-items: center;
+  background-color: rgba(255, 255, 255, .4);
+  transition: .2s;
+}
+
+.image_container:hover .controllers aside {
+  background-color: rgba(255, 255, 255, .7);
+}
+
+.controllers aside:hover {
+  background-color: rgba(255, 255, 255, .9) !important;
+}
+
+.controllers aside img {
+  width: 3vh;
+  margin: 1vh;
+}
+
+.previous_btn {
+  position: absolute;
+  top: 12vw;
+  left: 0;
+  border-top-right-radius: 1vh;
+  border-bottom-right-radius: 1vh;
+}
+
+.next_btn {
+  position: absolute;
+  top: 12vw;
+  left: calc(60vw - 5vh + 1px);
+  border-top-left-radius: 1vh;
+  border-bottom-left-radius: 1vh;
+}
+
+@media screen and (max-width: 100vh) {
+  .image_gallery {
+    width: 84vw;
+    height: 50vw;
+  }
+
+  .image_item {
+    left: 0vw;
+    top: 0vw;
+    transition: 0s;
+  }
+
+  .current_image {
+    width: 84vw;
+    height: 50vw;
+  }
+
+  .controllers aside {
+    display: inline-grid;
+    height: 23vw;
+    width: 5vh;
+  }
+
+  .next_btn {
+    left: calc(84vw - 5vh + 1px);
+  }
+}

@@ -1,0 +1,123 @@
+.post {
+  display: inline-block;
+  width: 40vh;
+  height: 70vh;
+  position: relative;
+  margin: 2.2vh .7vh;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  transition: 0;
+  letter-spacing: .2vh;
+  border: .1vh solid var(--color);
+  border-radius: .8vh;
+}
+
+.post button {
+  width: 101%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: calc(.2vw + 1.5vh + 2px);
+  letter-spacing: .1vh;
+  font-weight: bold;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+  -webkit-mask-size: 3000% 100%;
+  mask-size: 3000% 100%;
+  border: none;
+  color: #000;
+  -webkit-animation: ani2 0.7s steps(29) forwards;
+  animation: ani2 0.7s steps(29) forwards;
+  cursor: pointer;
+}
+
+.post button:hover {
+  -webkit-animation: ani 0.7s steps(29) forwards;
+  animation: ani 0.7s steps(29) forwards;
+}
+
+.post:hover {
+  border: .1vh solid var(--gray);
+}
+
+.post_title {
+  display: grid;
+  width: 101%;
+  height: 12vh;
+  position: absolute;
+  left: 0;
+  bottom: 24.9vh;
+  align-items: center;
+  padding: 0 3vh;
+  font-size: calc(.2vw + 1.5vh + 3px);
+  text-transform: uppercase;
+  color: #000;
+  background-color: white;
+}
+
+.post_text {
+  display: grid;
+  width: 101%;
+  height: 25vh;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 2vh;
+  text-align: left;
+  font-size: calc(.15vw + 1.4vh + 2px);
+  font-family: "Poppins";
+  font-weight: normal;
+  background-color: var(--background_color);
+}
+
+.post_text span {
+  color: white;
+  text-align: center;
+  font-size: calc(.1vw + 1.3vh + 2px);
+  margin-top: -1vh;
+}
+
+.post_inner_side {
+  display: grid;
+  width: 101%;
+  height: 100%;
+  position: absolute;
+  place-items: center;
+  overflow: hidden;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: calc(.2vw + 1.3vh);
+  text-transform: uppercase;
+}
+
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+@media screen and (max-width: 100vh) {
+    .button-container-1, .button-container-2, .button-container-3 {
+    width: 86% !important;
+  }
+}

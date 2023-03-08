@@ -1,0 +1,13 @@
+.full_width_video {
+  width: 80vw;
+  margin: 0 10vw;
+  border-radius: 2vh;
+}
+
+.full_width_iframe {
+  width: 80vw;
+  height: calc(80vw * 9 / 16);
+  margin: 0 10vw;
+  border: none;
+  border-radius: 2vh;
+}

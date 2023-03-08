@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+li {
+  list-style: none;
+}
+
+@media screen and (max-width: 130vh) {
+  body {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+}

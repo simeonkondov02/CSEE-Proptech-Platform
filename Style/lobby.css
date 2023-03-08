@@ -1,0 +1,31 @@
+.aside_video {
+  display: inline-block;
+  width: 50vh;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 5vh;
+}
+
+.aside_video iframe {
+  width: 50vh;
+  height: calc(50vh / 16 * 9);
+  border: none;
+  margin: calc(50vh - calc(50vh / 16 * 9 / 2)) 0;
+  border-radius: 1vh;
+}
+
+@media screen and (max-width: 100vh) {
+  .aside_video {
+    width: 50vh;
+    height: calc(50vh / 16 * 9);
+    position: inherit;
+    margin: calc(50% - 25vh);
+  }
+
+  .aside_video iframe {
+    width: 50vh;
+    height: calc(50vh / 16 * 9);
+    margin: 0;
+  }
+}

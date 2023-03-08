@@ -1,0 +1,51 @@
+.title_box {
+  display: inline-grid;
+  width: 100%;
+  height: 14vh;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2vw;
+  color: white;
+}
+
+.main_title img {
+  width: 50vh;
+}
+
+@media screen and (max-width: 130vh) {
+  .title_box {
+    display: inline-grid;
+    width: 80%;
+    height: 44vh;
+    margin: 10%;
+    position: relative;
+    align-items: flex-start;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1vh;
+  }
+
+  #lobby_title_box {
+    background-image: url("../Resurces/Mobile Menu/Lobby.jpg");
+  }
+
+  #conferences_title_box {
+    background-image: url("../Resurces/Mobile Menu/Conferences.jpg");
+  }
+
+  #podcasts_title_box {
+    background-image: url("../Resurces/Podcasts/STUDIO FOUR _2 (0-00-04-00).jpg");
+  }
+
+  #articles_title_box {
+    background-image: url("../Resurces/Graphics/mark-chan-S4qZLGrkSoY-unsplash-applied.jpg");
+  }
+
+  .main_title img {
+    width: 30vh;
+  }
+}

@@ -1,0 +1,45 @@
+#register {
+  position: relative;
+}
+
+#timer {
+  display: inline-block;
+  width: 100%;
+  right: 0;
+  text-align: center;
+  margin: 3vh 0 0 0;
+}
+
+
+.timer_content {
+  display: inline;
+  font-size: calc(4vw + 4vh + 8px);
+  -webkit-text-stroke: .1vh white;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: rgb(102, 153, 255);
+  text-transform: uppercase;
+  margin-left: 1vw;
+}
+
+.red {
+  -webkit-text-stroke: .2vh red;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 100vh) {
+  .timer_content {
+    font-size: calc(14vw);
+    -webkit-text-stroke: .1vh white;
+  }
+}
+
+.timer_content::after {
+  content: ":";
+  margin-left: 1vw;
+}
+
+.timer_content:last-of-type::after {
+  content: none;
+}

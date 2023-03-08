@@ -1,0 +1,6 @@
+:root {
+  --background: rgba(153, 204, 255, 1);
+  --dark_accent: rgba(0, 170, 255, 1);
+  --bright_accent: rgb(0, 170, 255);
+  --gray: rgb(170, 170, 170)
+}

@@ -1,0 +1,79 @@
+.paragraph {
+  margin: 2vh 7vw;
+  text-align: justify;
+  font-size: calc(.2vw + 1.5vh + 2px);
+  font-family: "Poppins";
+}
+
+.bg_p  {
+  font-family: "Arial" !important;
+  font-weight: lighter;
+  line-height: calc(.3vw + 1.8vh + 3px) !important;
+}
+
+.paragraph a {
+  color: var(--color);
+  text-decoration: underline;
+}
+
+.in_paragraph_title {
+  font-size: calc(.3vw + 1.7vh + 5px);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.three_col {
+  font-size: calc(.2vw + 1.5vh + 2px);
+  font-family: "Poppins";
+  margin: 10vh 0;
+}
+
+.col {
+  display: inline-grid;
+  width: 25%;
+  height: 100%;
+}
+
+.in_paragraph_title {
+  margin: 0 1vw !important;
+}
+
+.col:first-of-type ul {
+  text-align: right;
+  padding: 0 1vw;
+  border-right: solid 1px rgb(0, 0, 0);
+}
+
+.col:nth-last-of-type(2) ul {
+  text-align: justify;
+  padding: 0 1vw;
+}
+
+.col:nth-last-of-type(2) .in_paragraph_title {
+  text-align: center;
+}
+
+.col:last-of-type ul {
+  text-align: left;
+  padding: 0 1vw;
+  border-left: solid 1px rgb(0, 0, 0);
+}
+
+.col ul li {
+  margin: 1.3vh 0;
+}
+
+@media screen and (max-width: 100vh) {
+  .col {
+    width: 90%;
+  }
+  .col ul {
+    text-align: justify !important;
+    border: none !important;
+    margin: 1vh 0 5vh 0;
+  }
+  .col ul li {
+    margin: .5vh 0;
+  }
+}

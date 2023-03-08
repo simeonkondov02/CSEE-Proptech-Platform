@@ -1,0 +1,133 @@
+.card {
+ position: relative;
+ width: 45vh;
+ height: 35vh;
+ margin-top: 7vh;
+ overflow: hidden;
+ border: .1vh solid rgba(102, 153, 255, 1);
+ font-family: 'Lato', sans-serif;
+ font-weight: 300;
+ transition: 0.5s;
+ letter-spacing: .2vh;
+ border-radius: .8vh;
+ margin: .8vh 0;
+}
+
+.card button {
+ width: 101%;
+ height: 100%;
+ background: rgba(102, 153, 255, 1);
+ -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+ mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+ -webkit-mask-size: 3000% 100%;
+ mask-size: 3000% 100%;
+ border: none;
+ color: #000;
+ cursor: pointer;
+ -webkit-animation: ani2 0.7s steps(29) forwards;
+ animation: ani2 0.7s steps(29) forwards;
+}
+
+.card button:hover {
+ -webkit-animation: ani 0.7s steps(29) forwards;
+ animation: ani 0.7s steps(29) forwards;
+}
+
+.card button .card_background {
+  display: inline-grid;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  place-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card_title {
+  position: absolute;
+  bottom: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: calc(.15vw + 1.5vh + 2px);
+  letter-spacing: .1vh;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgba(102, 153, 255, 1);
+  padding: 2vh;
+}
+
+.mas {
+  display: inline-grid;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  place-items: center;
+  color: #fff;
+  text-align: center;
+  width: 101%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  position: absolute;
+  font-size: calc(.2vw + 1.3vh);
+  overflow: hidden;
+  font-weight: bold;
+}
+
+@-webkit-keyframes ani {
+ from {
+	 -webkit-mask-position: 0 0;
+	 mask-position: 0 0;
+}
+ to {
+	 -webkit-mask-position: 100% 0;
+	 mask-position: 100% 0;
+}
+}
+
+@keyframes ani {
+ from {
+	 -webkit-mask-position: 0 0;
+	 mask-position: 0 0;
+}
+ to {
+	 -webkit-mask-position: 100% 0;
+	 mask-position: 100% 0;
+}
+}
+
+@-webkit-keyframes ani2 {
+ from {
+	 -webkit-mask-position: 100% 0;
+	 mask-position: 100% 0;
+}
+ to {
+	 -webkit-mask-position: 0 0;
+	 mask-position: 0 0;
+}
+}
+
+@keyframes ani2 {
+ from {
+	 -webkit-mask-position: 100% 0;
+	 mask-position: 100% 0;
+}
+ to {
+	 -webkit-mask-position: 0 0;
+	 mask-position: 0 0;
+}
+}
+
+@media screen and (max-width: 100vh) {
+   .button-container-2 {
+     width: 86vw !important;
+  }
+}
+
+.conference_title {
+  background-color: black !important;
+}

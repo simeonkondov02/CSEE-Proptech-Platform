@@ -1,0 +1,135 @@
+.blur_container {
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(2vh);
+  z-index: -1;
+}
+
+#home_blur, #home_desc_container {
+  background: url("../Resurces/Main Page/main.jpg");
+}
+
+#lobby_blur, #lobby_desc_container {
+  background: url("../Resurces/Lobby/lobby.jpg");
+}
+
+#conferences_blur, #conferences_desc_container {
+  background: url("../Resurces/Conferences/SPECIAL PANEL (0-00-04-00)_1.jpg");
+}
+
+#podcasts_blur, #podcasts_desc_container {
+  background: url("../Resurces/Podcasts/STUDIO FOUR _2 (0-00-04-00).jpg");
+}
+
+#articles_blur, #articles_desc_container {
+  background: url("../Resurces/Articles/note-thanun-HF4aAcVorJ8-unsplash-applied 2.jpg");
+}
+
+.desc_content {
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  background-position: center !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
+#lobby_link {
+  display: inline-block;
+  width: 60vw;
+  height: 50vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#conference_2022_link {
+  display: inline-block;
+  width: 60vw;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#podcasts_link {
+  display: inline-block;
+  width: 25vw;
+  height: 70vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#media_link {
+  display: inline-block;
+  width: 15vw;
+  height: 70vh;
+  position: absolute;
+  top: 0;
+  left: 25vw;
+}
+
+.mobile_content {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  padding: 16vh 8vw;
+}
+
+.mobile_menu_item {
+  display: inline-grid;
+  width: 86vw;
+  height: 36vh;
+  align-items: center;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  border: .1vh solid var(--dark_accent);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 1vh 0;
+  border-radius: 1vh;
+  font-size: calc(.4vw + 3vh + 5px);
+  font-weight: 500;
+  color: black;
+  text-shadow: 1px 1px 0px rgba(0, 170, 255, 1);
+  text-transform: uppercase;
+}
+
+.mobile_menu_item:first-of-type {
+  background-image: url("../Resurces/Mobile Menu/Lobby.jpg");
+}
+
+.mobile_menu_item:nth-of-type(2) {
+  background-image: url("../Resurces/Mobile Menu/Conferences.jpg");
+}
+
+.mobile_menu_item:nth-of-type(3) {
+  background-image: url("../Resurces/Mobile Menu/Podcasts.jpg");
+}
+
+.mobile_menu_item:nth-of-type(4) {
+  background-image: url("../Resurces/Graphics/mark-chan-S4qZLGrkSoY-unsplash-applied.jpg");
+}
+
+@media screen and (max-width: 130vh) {
+  .desc_content {
+    display: none;
+  }
+  .mobile_content {
+    display: inline-block;
+  }
+  #lobby_desc_container, #conferences_desc_container, #articles_desc_container,
+  #podcasts_desc_container {
+    display: inline-block;
+    background: none;
+    overflow: auto !important;
+  }
+}

@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="The only international PropTech Conference in South-East Europe unites the tech companies and property
+                                      developers from the region in order to foster their business developent and innovation. PropTech Bulgaria
+                                      is the driver behind this endeavour.">
+    <meta name="keywords" content="south-east, europe, proptech, bulgaria, romania, czech republic, slovakia, greece, italy, austria">
+    <meta name="author" content="Simeon Kondov, simeonkondov2@gmial.com">
+
+    <link rel="icon" href="../Resurces/Images/Logos/conferenceLogo.png">
+
+    <title>The only South-East European PropTech stage</title>
+
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/fonts.css">
+    <link rel="stylesheet" href="../Style/titleScreen.css">
+    <link rel="stylesheet" href="../Style/title.css">
+    <link rel="stylesheet" href="../Style/intro.css">
+    <link rel="stylesheet" href="../Style/navigation.css">
+    <link rel="stylesheet" href="../Style/containers.css">
+    <link rel="stylesheet" href="../Style/scrollbar.css">
+    <link rel="stylesheet" href="../Style/timer.css">
+    <link rel="stylesheet" href="../Style/card.css">
+    <link rel="stylesheet" href="../Style/backgroundVideo.css">
+    <link rel="stylesheet" href="../Style/paragraphs.css">
+    <link rel="stylesheet" href="../Style/props.css">
+    <link rel="stylesheet" href="../Style/iframes.css">
+    <link rel="stylesheet" href="../Style/button.css">
+    <link rel="stylesheet" href="../Style/speakers.css">
+    <link rel="stylesheet" href="../Style/timeline.css">
+    <link rel="stylesheet" href="../Style/recomendations.css">
+    <link rel="stylesheet" href="../Style/footer.css">
+    <link rel="stylesheet" href="../Style/colors2022.css">
+    <link rel="stylesheet" href="../Style/link.css">
+    <link rel="stylesheet" href="../Style/scrollToTopButton.css">
+    <link rel="stylesheet" href="../Style/trailer.css">
+    <link rel="stylesheet" href="../Style/partners.css">
+    <link rel="stylesheet" href="../Style/popUpWindow.css">
+    <link rel="stylesheet" href="../Style/slider.css">
+    <link rel="stylesheet" href="../Style/video.css">
+
+    <script type="text/javascript" src="../Script/timer.js"></script>
+    <script type="text/javascript" src="../Script/showSpeakers.js"></script>
+    <script type="text/javascript" src="../Script/timeLine.js"></script>
+    <script type="text/javascript" src="../Script/partners.js"></script>
+    <script type="text/javascript" src="../Script/popUpWindow.js"></script>
+    <script type="text/javascript" src="../Script/slider.js"></script>
+
+  </head>
+  <body style="background-image: url('../Resurces/Images/Backgrounds/background2022.jpg');">
+    <main id="navigation">
+        <nav id="main_nav">
+            <img id="nav_logo" src="../Resurces/Images/Logos/conferenceLogo.png">
+
+            <ul class="nav_links">
+                <li class="nav_item"><a class="nav_link" href="#">Home</a></li>
+                <li class="nav_item"><a class="nav_link" href="../../index.html">Map</a></li>
+                <li class="nav_item"><a class="nav_link" href="#corporative_video">Why</a></li>
+                <li class="nav_item"><a class="nav_link" href="#speakers">Speakers</a></li>
+                <li class="nav_item"><a class="nav_link" href="#time_line">Timeline</a></li>
+                <li class="nav_item"><a class="nav_link" href="#tickets">Tickets</a></li>
+                <li class="nav_item"><a class="nav_link" href="#partners">Partners</a></li>
+                <li class="nav_item"><a class="nav_link" href="venue.html">Venue</a></li>
+                <li class="nav_item" style="display: none"><a class="nav_link" href="#register">Tickets</a></li>
+                <li class="nav_item" style="visibility: hidden"><a class="nav_link" href="#register">Stats</a></li>
+            </ul>
+        </nav></main>
+
+    <main id="title_screen">
+        <h2 class="main_title">CSEE <br><span>break-through</span> conference</h2></main>
+
+    <main id="intro">
+      <div id="parallax"></div>
+
+      <script type="text/javascript">
+          (function () {
+              // Add event listener
+              document.addEventListener("mousemove", parallax);
+              const elem = document.querySelector("#parallax");
+              // Magic happens here
+              function parallax(e) {
+                  let _w = window.innerWidth / 2;
+                  let _h = window.innerHeight / 2;
+                  let _mouseX = e.clientX;
+                  let _mouseY = e.clientY;
+                  let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
+                  let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+                  let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+                  let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+                  console.log(x);
+                  elem.style.backgroundPosition = x;
+              }
+
+          })();
+      </script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+              integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+              crossorigin="anonymous"></script>
+
+      <script src="../Script/script.js"></script></main>
+
+    <main class="main_container" id="speackers_video">
+      <video class="full_width_video" controls>
+          <source src="../Resurces/Videos/RENDER 1920x1080_v2 +.mp4" type="video/mp4">
+      </video></main>
+
+    <main class="main_container first" id="speakers">
+        <a onclick="openWindow('sylvia_pavlova_info')">
+            <div class="card">
+                <span class="card_inner_side">SEE MORE</span>
+                <button type="button" style="background-image: url('../Resurces/Images/Speakers/2021/1_SylviaPavlova.jpg');">
+                    <h5 class="speaker_name">Sylvia Pavlova MBA CMC</h5>
+                    <h6 class="speaker_info">Founder<br>PropTech Bulgaria<br><span>Bulgaria<span></h6>
+                </button>
+            </div>
+        </a>
+
+        <section id="sylvia_pavlova_info" class="pop_up_window_container">
+            <section class="window">
+
+                <div class="top_line">
+                    <a class="close_btn" onclick="closeWindow('sylvia_pavlova_info')">
+                        <img src="../Resurces/Images/Icons/close.png">
+                    </a>
+                </div>
+
+                <div class="content">
+                    <div>
+                        <p class="paragraph">
+                            Sylvia Pavlova MBA CMC is the Founder of <a target="_blank" href="http://proptechbulgaria.eu/">PropTech Bulgaria</a> - the one-stop-shop for everything
+                            which concerns PropTech in Bulgaria. PropTech Bulgaria is the national PropTech association of Bulgaria and the driver behind uniting the South-East
+                            European PropTech. Since 2018 PropTech Bulgaria represents the country in all major international PropTech organizations.
+                        </p>
+
+                        <p class="paragraph">
+                            Sylvia Pavlova is an international startup mentor of MBAs who want to undertake the entrepreneurial development track. For 8 years now she has been a
+                            mentor to startups from the UK, Greece, UAE, Bulgaria, Austria.
+                        </p>
+
+                        <p class="paragraph">
+                            Sylvia achieved her MBA degree with OUBS, the UK in 2013. The MBA ranks in top 1 % of MBA degrees in the world. She also holds degrees in Commerce &
+                            Management and Law. Since 2016 Sylvia Pavlova has had an internationally certified management consultant (CMC) status in Strategy and Business Development.
+                            She was part of the Strategy departments of large holding companies in construction and ITC.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+        <a onclick="openWindow('liliyabozhilova_info')">
+            <div class="card">
+                <span class="card_inner_side">See More</span>
+                <button type="button" style="background-image: url('../Resurces/Images/Speakers/2021/Liliya Bozhilova.jpg');">
+                    <h5 class="speaker_name">Liliya Bozhilova</h5>
+                    <h6 class="speaker_info">Co-Founder &amp; Propject Manager<br>LLV Technology<br><span>Bulgaria<span></span></span></h6>
+                </button>
+            </div>
+        </a>
+
+        <section id="liliyabozhilova_info" class="pop_up_window_container">
+            <section class="window">
+
+                <div class="top_line">
+                    <a class="close_btn" onclick="closeWindow('liliyabozhilova_info')">
+                        <img src="../Resurces/Images/Icons/close.png">
+                    </a>
+                </div>
+
+                <div class="content">
+                    <div>
+                        <p class="paragraph">
+                            LLV Technology Ltd. is a company that provides B2B software solutions in the field of Property and Facility Management.
+                        </p>
+
+                        <p class="paragraph">
+                            Our product ProPMS is a web-based building management system that helps property and facility professionals effectively to manage buildings, financial reporting
+                            and customer relationships.
+                        </p>
+
+                        <p class="paragraph">
+                            ProPMS is built on a modular principle, which allows flexibility in adapting to specific requirements and business models by expanding the system with additional
+                            functionality.
+                        </p>
+
+                        <p class="paragraph">
+                            ProPMS develops and reflects innovations and trends in property management and technological ones as well.
+                        </p>
+
+                        <p class="paragraph">
+                            ProPMS fits in various organizations and models and its functionality has been developed for the specifics of each business model:
+                        </p>
+
+                        <p class="paragraph">
+                            • Residential buildings in condominium mode<br>
+                            • Residential complexes<br>
+                            • Holiday complexes<br>
+                            • Business buildings<br>
+                            • Rent management<br>
+                            • Contract management<br>
+                            • Building fund management and equipment
+                        </p>
+
+                        <p class="paragraph">
+                            For additional information:<br>
+                            Liliya Bozhilova / Project Manager /<br>
+                            • + 359 876 18 58 73<br>
+                            • +359 898 69 68 82<br>
+                            • sales@llvtechnology.com<br>
+                            • www.llvtechnology.com
+                        </p>
+                    </div>
+
+            </section>
+        </section>
+
+        <a onclick="openWindow('milan_bogar_info')">
+            <div class="card">
+                <span class="card_inner_side">SEE MORE</span>
+                <button type="button" style="background-image: url('../Resurces/Images/Speakers/2021/5_MilanBogar.jpg');">
+                    <h5 class="speaker_name">Milan Bogar</h5>
+                    <h6 class="speaker_info">Founder<br>PropTech Slovakia<br><span>Slovakia<span></h6>
+                </button>
+            </div>
+        </a>
+
+        <section id="milan_bogar_info" class="pop_up_window_container">
+            <section class="window">
+
+                <div class="top_line">
+                    <a class="close_btn" onclick="closeWindow('milan_bogar_info')">
+                        <img src="../Resurces/Images/Icons/close.png">
+                    </a>
+                </div>
+
+                <div class="content">
+                    <div>
+                        <video controls class="info_window_video">
+                            <source src="../Resurces/Videos/5.mp4" type="video/mp4">
+                        </video>
+
+                        <p class="paragraph">
+                            The goals of PropTech Slovakia in Slovakia and abroad are:<br>
+                            • promoting innovation, expanding a healthy competitive PropTech market and protecting intellectual property rights at home and abroad,<br>
+                            • support for PropTech start-ups and scale-ups and investors at home and abroad,<br>
+                            • development of cooperation between PropTech providers and construction and real estate companies and with public state and local authorities and institutions,<br>
+                            • training and development of cooperation with the academic sector and associations,<br>
+                            • development of a PropTech community in Slovakia and abroad.<br>
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+        <section id="stefanieroithmayr_info" class="pop_up_window_container">
+            <section class="window">
+
+                <div class="top_line">
+                    <a class="close_btn" onclick="closeWindow('stefanieroithmayr_info')">
+                        <img src="../Resurces/Images/Icons/close.png">
+                    </a>
+                </div>
+
+                <div class="content">
+                    <div>
+                        <p class="paragraph">
+                            <b>About Stefanie</b><br>
+                            Stefanie Roithmayr has been committed to climate and environmental topics from a very early age. She studied environmental and
+                            resource management and dedicated herself to the sustainable building sector after graduation. For several years she worked for
+                            a technical construction office specialised in the plannig of sustainable and energy-efficient buildings. Stefanie works as a
+                            technology expert for the Vienna Business Agency and supports innovative Viennese technology companies from the construction and
+                            real estate sector. Her topics include circular construction, proptech, building information modeling, sustainable construction
+                            materials among other things. In her role, she acts as a link between companies, administration and research.
+                        </p>
+
+                        <p class="paragraph">
+                            <b>About Vienna Business Agency</b><br>
+                            The Vienna Business Agency supports local and international companies in all phases of their business development, providing
+                            advice on all corporate issues and helping expats get up and running in Vienna. Anyone wanting to found a company, startups,
+                            sole traders, domestic and international small and medium-sized enterprises or corporations will receive all the information
+                            they need. If you’re looking for funding, business premises, an office, free advice or workshops and want to establish new
+                            partnerships, then we’re the best people to speak to. All the services are provided for companies/persons based in Vienna or
+                            anyone who wants to establish their business in the city.
+                        </p>
+                    </div>
+
+            </div></section>
+        </section>
+
+        <a onclick="openWindow('stevenaitken_info')">
+            <div class="card">
+                <span class="card_inner_side">SEE MORE</span>
+                <button type="button" style="background-image: url('../Resurces/Images/Speakers/2022/Steven.jpg');">
+                    <h5 class="speaker_name">Steven Aitkenhead</h5>
+                    <h6 class="speaker_info">Kodit.io<br><span>Spain</span></h6>
+                </button>
+            </div>
+        </a>
+
+        <section id="stevenaitken_info" class="pop_up_window_container">
+            <section class="window">
+
+                <div class="top_line">
+                    <a class="close_btn" onclick="closeWindow('stevenaitken_info')">
+                        <img src="../Resurces/Images/Icons/close.png">
+                    </a>
+                </div>
+
+                <div class="content">
+                    <div>
+                        <p class="paragraph">
+                          Steven Aitkenhead - Country Manager, Spain & Co-Founder of Rent to Own startup Lucas
+                        </p>
+
+                        <p class="paragraph">
+                          <span style="font-weight: bold">About the company:</span>
+                          <br>
+                          Founded in 2017, we are a real estate company changing how people buy, sell and rent homes. We are disrupting the real estate market by building
+                          a seamless digital customer experience while creating cutting-edge technology for our agents, making buying and selling homes fast, simple, and safe.
+                        </p>
+
+                        <p class="paragraph">
+                          In addition to offering a top-notch customer experience and developing technology, sustainability is one of the cornerstones of our operations.
+                          That’s why our in-house purchasing and renovation teams make sure old homes get a second chance.
+                        </p>
+
+                        <p class="paragraph">
+                          One of our main objectives is to make homeownership more accessible, which is why we acquired the Spanish Real Estate startup Lucas in 2021. It
+                          s the first time an iBuyer and a Rent-to-Own company have been merged to providing more flexibility for first home buyers. With our revolutionary
+                          Rent-to-Own service, you can rent your dream home for a year while we help you save for a down payment. With Kodit Pay, anyone can become a
+                          homeowner without years of saving.
+                        </p>
+
+                        <p class="paragraph">
+                          We are a team of over 200 across 6 offices in Finland, Spain, and Poland. We have helped thousands of home sellers and buyers, thanks to our team
+                          of specialists who work every day with technology and data to guarantee efficiency and peace of mind in each transaction. Though the work is far
+                          from over. We have ambitious expansion plans for our new markets and new models in the rear-view.
+                        </p>
+
+                        <p class="paragraph">
+                          Changing the way the industry works takes persistence, hard work, and dedication – which is why we have put together a team filled with the
+                          industry’s most innovative problem-solvers and doers. We move fast, take risks, welcome bold ideas and own our decisions as we reimagine the
+                          future of Real Estate.
+                        </p>
+
+                        <p class="paragraph">
+                          <a target="_blank" href="http://www.mapaproptech.com/">Kodit.io</a> has recently been recognized as the Finnish startup of the year (Nordic
+                          Startup Awards) and one of Europe's hottest scale-ups (Adyen x TNW - Tech5).
+                        </p>
+
+                        <p class="paragraph">
+                          <span style="font-weight: bold">About Steven:</span>
+                          <br>
+                          Entrepreneur with an international background in finance, strategy, and project development. Combines all backgrounds to start projects from
+                          scratch and taking them towards fast growth. Partner and General Manager for Proptech
+                          <a target="_blank" href="http://www.mapaproptech.com/">Kodit.io</a> Iberia, Co-Founder of Rent to Own startup Lucas.
+                        </p>
+
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+        <a onclick="">
+            <div class="card">
+                <span class="card_inner_side">MORE SOON</span>
+                <button type="button" style="background-image: url('../Resurces/Images/Speakers/2022/Nicolas Balirali.jpg');">
+                    <h5 class="speaker_name">Nicolas Barilari</h5>
+                    <h6 class="speaker_info">Expert in crypto currencies and real estate sector<br><span>Spain</span></h6>
+                </button>
+            </div>
+        </a>
+
+        <a onclick="openWindow('hristoshomov_info')">
+          <div class="card">
+              <span class="card_inner_side">MORE SOON</span>
+              <button type="button" style="background-image: url('../Resurces/Images/Speakers/2022/Hristo Shomov.jpg');">
+                  <h5 class="speaker_name">Hristo Shomov</h5>
+                  <h6 class="speaker_info">Founder Vericco<br><span>Bulgaria</spain></h6>
+              </button>
+          </div>
+        </a>
+
+        <section id="hristoshomov_info" class="pop_up_window_container">
+            <section class="window">
+
+                <div class="top_line">
+                    <a class="close_btn" onclick="closeWindow('hristoshomov_info')">
+                        <img src="../Resurces/Images/Icons/close.png">
+                    </a>
+                </div>
+
+                <div class="content">
+                    <div>
+                        <p class="paragraph">
+                          Vericco is an international virtual tours production company. Our offices are located in Germany and Bulgaria and are operating
+                          worldwide. We use Virtual Reality (VR) to differentiate our client’s products and businesses, to capture customer's attention
+                          and engage with them in an unforgettable experience from the comfort of their natural surroundings.
+                        </p>
+
+                        <p class="paragraph">
+                          I started my career in TV producing for a leading regional production house in Sofia, Bulgaria. I then made the move to a small
+                          boutique studio working on short and feature-length Advertising. Since the last 5 years my battlefield became Advertising. I now
+                          manage a creative collective that specializes into VR & AR projects. We have more than 150 projects in our portfolio, including:
+                          The First Bulgarian 360-degrees Music Video, Our Own VR Headsets, The First BTL Campaign with Stereoscopic Virtual Reality, etc.
+                          Also, I am a co-founder of Vericco - a virtual tour production company that produces some of the best quality virtual tours.
+                        </p>
+
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+        <a onclick="openWindow('emelianfrenchev_info')">
+          <div class="card">
+              <span class="card_inner_side">MORE SOON</span>
+              <button type="button" style="background-image: url('../Resurces/Images/Speakers/2022/Emelian Frenchev.jpg');">
+                  <h5 class="speaker_name">Emeliyan Frenchev</h5>
+                  <h6 class="speaker_info">Vericco<br><span>Bulgaria</spain></h6>
+              </button>
+          </div>
+        </a>
+
+        <section id="emelianfrenchev_info" class="pop_up_window_container">
+            <section class="window">
+
+                <div class="top_line">
+                    <a class="close_btn" onclick="closeWindow('emelianfrenchev_info')">
+                        <img src="../Resurces/Images/Icons/close.png">
+                    </a>
+                </div>
+
+                <div class="content">
+                    <div>
+                        <p class="paragraph">
+                          Vericco is an international virtual tours production company. Our offices are located in Germany and Bulgaria and are operating
+                          worldwide. We use Virtual Reality (VR) to differentiate our client’s products and businesses, to capture customer's attention
+                          and engage with them in an unforgettable experience from the comfort of their natural surroundings.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+        <a onclick="openWindow('sheilaramos_info')">
+            <div class="card">
+                <span class="card_inner_side">SEE MORE</span>
+                <button type="button" style="background-image: url('../Resurces/Images/Speakers/2022/Sheila Gracia.jpg');">
+                    <h5 class="speaker_name">Sheila Gracia Ramos</h5>
+                    <h6 class="speaker_info">Services and International Director, CPO & Co-Founder at mapaproptech<br><span>Spain<span></h6>
+                </button>
+            </div>
+        </a>
+
+        <section id="sheilaramos_info" class="pop_up_window_container">
+            <section class="window">
+
+                <div class="top_line">
+                    <a class="close_btn" onclick="closeWindow('sheilaramos_info')">
+                        <img src="../Resurces/Images/Icons/close.png">
+                    </a>
+                </div>
+
+                <div class="content">
+                    <div>
+                        <p class="paragraph">
+                          API is the real estate agents’ association in Catalonia and Spain. We have access to 80% of the real estate professionals in Spain.
+                          We are also the creators of <a target="_blank" href="http://www.mapaproptech.com/">www.mapaproptech.com</a> , and therefore, we know all proptech companies in Spain.
+                          Also, we have a platform that serves more than 4.000 real estate agents and their teams, and this platform is connected with more than 80 Proptechs.
+                        </p>
+
+                        <p class="paragraph">
+                          Sheila is the Founder of the first PROPTECH real estate technology event in Spain.
+                          Co - founder of <a target="_blank" href="http://www.mapaproptech.com/">www.mapaproptech.com</a>
+                          Expert on proptech, startups, innovation and real estate sector
+                          Expert on international relations and happy in intercultural environments
+                        </p>
+
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+        <a onclick="">
+            <div class="card">
+                <span class="card_inner_side">MORE SOON</span>
+                <button type="button" style="background-image: url('../Resurces/Images/Speakers/2022/Miro Hachlinec.jpg');">
+                    <h5 class="speaker_name">Miro Hachlinec</h5>
+                    <h6 class="speaker_info">BeIT<br><span>Czech Republic<span></h6>
+                </button>
+            </div>
+        </a>
+
+        <a onclick="openWindow('michalmagnusek_info')">
+            <div class="card">
+                <span class="card_inner_side">SEE MORE</span>
+                <button type="button" style="background-image: url('../Resurces/Images/Speakers/2022/Michal Magnusek.jpg');">
+                    <h5 class="speaker_name">Michal Magnusek</h5>
+                    <h6 class="speaker_info">Livespace<br><span>Slovakia<span></h6>
+                </button>
+            </div>
+        </a>
+
+        <section id="michalmagnusek_info" class="pop_up_window_container">
+            <section class="window">
+
+                <div class="top_line">
+                    <a class="close_btn" onclick="closeWindow('michalmagnusek_info')">
+                        <img src="../Resurces/Images/Icons/close.png">
+                    </a>
+                </div>
+
+                <div class="content">
+                    <div>
+                        <p class="paragraph">
+                          Michal Magnusek is a product manager, director, CEO, Chief Strategist of dev-house
+                          <a target="_blank" href="https://www.vector011.com/">vector011.com</a>, and co-founder of <a target="_blank" href="https://www.ourlivespace.com/">OurLiveSpace.com</a>
+                          - a communication platform for residential projects. His primary focus is to design products that change the status quo.
+                        </p>
+
+                        <p class="paragraph">
+                          Michal has given talks and conducted workshops on Product Management, Negotiations, Value-Based Pricing, Mindset, Entrepreneurship, Business Management, and Client
+                          Relations.
+                        </p>
+
+                        <p class="paragraph">
+                          Michal loves to build business relations and explore the ideal leverage position in the business. He is always keen on help and answers your questions - do not
+                          hesitate to talk to him at the conference
+                        </p>
+
+                        <p class="paragraph">
+                          <span style="font-weight: bold">Project</span>
+                          <br>
+                          LiveSpace is a European online social network for residential projects. It covers communication between the property manager, service providers, and residents.
+                          The company was founded in 2019 in Slovakia, and the project LiveSpace now has more than 30 thousand users in middle Europe. Founders will expand to other countries
+                          in Europe, the US, and Asia.
+                        </p>
+
+                        <p class="paragraph">
+                          LiveSpace can be accessed from personal computers, tablets, and smartphones. The main communication features of the LiveSpace are notices, surveys, online voting,
+                          documents, and reporting issues - all information for happy living
+                        </p>
+
+                        <p class="paragraph">
+                          LiveSpace is also an integration platform for other 3rd party services like bike-sharing, car-sharing, intelligent devices for homes, CRM systems, field service
+                          systems, accounting systems, and others connected with residential living. It provides a tool to display all critical information for residents and also collect all
+                          information needed by the property manager from residents.
+                        </p>
+
+                        <p class="paragraph">
+                          LiveSpace received investment from 2 investors in 2022, and the founders are scaling the business with an open mind to connect with other companies and collaborations.
+                          Feel free to contact Michal Magnusek, the CEO of LiveSpace. He is always keen to help and answers your questions.
+                        </p>
+
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+        <a onclick="openWindow('kalmarzoltan_info')">
+            <div class="card">
+                <span class="card_inner_side">SEE MORE</span>
+                <button type="button" style="background-image: url('../Resurces/Images/Speakers/2022/Kalmar_Zoltan.jpg');">
+                    <h5 class="speaker_name">Kalmar Zoltan</h5>
+                    <h6 class="speaker_info">founder ProptechZoom.com and Proptech Hungary<br><span>Hungary<span></h6>
+                </button>
+            </div>
+        </a>
+
+        <section id="kalmarzoltan_info" class="pop_up_window_container">
+            <section class="window">
+
+                <div class="top_line">
+                    <a class="close_btn" onclick="closeWindow('kalmarzoltan_info')">
+                        <img src="../Resurces/Images/Icons/close.png">
+                    </a>
+                </div>
+
+                <div class="content">
+                    <div>
+                        <p class="paragraph">
+                          I have been working in the real estate industry for more than 22 years now. I launched my first proptech startup in 2004. I sold my company to the biggest
+                          propterty portal in Hungary where i was a business development manager for 6 years. After exiting i am building a proptech ecosystem in Hungary to support
+                          the digital transformation of real estate players and creating a bridge across the two sector.
+                        </p>
+
+                        <p class="paragraph">
+                          Building a proptech ecosystem to support the digital transformation, ProptechZoOm aims to educate real estate market players and help digital solutions
+                          spread faster. We cooperate with the proptech organizations of the markets of the surrounding countries, especially the Central and Eastern European region,
+                          the largest professional associations in the domestic real estate market, the domestic real estate companies and we are constantly researching the latest
+                          proptech companies. We are constantly analyzing the digital trends that have the greatest impact on the Hungarian real estate market and try to share these
+                          lessons with market participants. Our intention is to educate the real estate market about these trends and connections, so that we can disseminate these
+                          collected data as widely as possible. We are constantly looking for partners who can support or are receptive to innovation in order to help the development
+                          of the domestic ecosystem together.
+                        </p>
+
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+        <a onclick="openWindow('lukaslinn_info')">
+            <div class="card">
+                <span class="card_inner_side">SEE MORE</span>
+                <button type="button" style="background-image: url('../Resurces/Images/Speakers/2022/Lukas Linn.jpg');">
+                    <h5 class="speaker_name">Lukas Linn</h5>
+                    <h6 class="speaker_info">Scouting & Investment Manager Blackprint<br><span>Germany<span></h6>
+                </button>
+            </div>
+        </a>
+
+        <section id="lukaslinn_info" class="pop_up_window_container">
+            <section class="window">
+
+                <div class="top_line">
+                    <a class="close_btn" onclick="closeWindow('lukaslinn_info')">
+                        <img src="../Resurces/Images/Icons/close.png">
+                    </a>
+                </div>
+
+                <div class="content">
+                    <div>
+                        <p class="paragraph">
+                            In late 2016, blackprint Booster was initiated as the first continental European PropTech Accelerator to support innovative business models in
+                            the real estate industry. The company is located in Frankfurt am Main, Germany and has a total of 18 alumni teams, making it one of the most
+                            significant early-stage PropTech investors in the world. Since then, blackprint Booster has established itself as the go-to-place for PropTech
+                            in Germany. As a network platform, blackprint Booster connects PropTech companies, established corporates and venture capitalists in order to
+                            drive digitization, innovation and sustainability for the construction & real estate industry.
+                        </p>
+
+                        <p class="paragraph">
+                            Blackprint offers a range of services to the industry’s various stakeholders, including its award-winning "Sustainability- and Tech-Scouting",
+                            which identifies and analyzes the partner‘s individual needs and provides innovative solutions accordingly. This service was recognized as a
+                            best practice innovation in the 4th ZIA Innovation Report (Germany). In addition, blackprint Booster hosts the REAL PropTech – the leading
+                            conference on innovation & digitization in the real estate industry – and initiated the first PropTech Germany Study in collaboration with an
+                            university.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+        <a onclick="openWindow('mitkotsonev_info')">
+            <div class="card">
+                <span class="card_inner_side">SEE MORE</span>
+                <button type="button" style="background-image: url('../Resurces/Images/Speakers/2022/Mitko Tsonev.jpg');">
+                    <h5 class="speaker_name">Mitko Tsonev</h5>
+                    <h6 class="speaker_info">Founder Valkrea House<br><span>Bulgaria<span></h6>
+                </button>
+            </div>
+        </a>
+
+        <section id="mitkotsonev_info" class="pop_up_window_container">
+            <section class="window">
+
+                <div class="top_line">
+                    <a class="close_btn" onclick="closeWindow('mitkotsonev_info')">
+                        <img src="../Resurces/Images/Icons/close.png">
+                    </a>
+                </div>
+
+                <div class="content">
+                    <div>
+                        <p class="paragraph">
+                            Valkrea.House provides integrated Smart Home solutions for the European market. We select, install and configure high quality intelligent
+                            systems for the home and the office.  You can trust our expertise to select the right setup for your project – retrofitting in a fully
+                            furnished home or integrating smart capability in a building under construction. Together we will design the most convenient solution to
+                            answer your needs.
+                        </p>
+
+                        <p class="paragraph">
+                            Mitko Tsonev is the founder and business owner of Valkrea.House. Previously he worked in Airbus, first, as a business consultant and, later,
+                            as a project manager for process optimisation. His experience includes industrial planning, agile project management, and digital transformation
+                            in the two main sites of the airplane manufacturer – Toulouse and Hamburg. Before that he’s a key accounts manager at IBM and digital product
+                            owner at PSA Peugeot Citroën. Mitko holds a master degree in Business Management and Innovations from Rennes School of Business and seeks to
+                            find the link between the technology and the higher quality of life ever since.
+                        </p>
+
+                        <p class="paragraph">
+                            In late 2016, blackprint Booster was initiated as the first continental European PropTech Accelerator to support innovative business models in
+                            the real estate industry. The company is located in Frankfurt am Main, Germany and has a total of 18 alumni teams, making it one of the most
+                            significant early-stage PropTech investors in the world. Since then, blackprint Booster has established itself as the go-to-place for PropTech in
+                            Germany. As a network platform, blackprint Booster connects PropTech companies, established corporates and venture capitalists in order to drive
+                            digitization, innovation and sustainability for the construction & real estate industry.
+                        </p>
+
+                        <p class="paragraph">
+                            Blackprint offers a range of services to the industry’s various stakeholders, including its award-winning "Sustainability- and Tech-Scouting", which
+                            identifies and analyzes the partner‘s individual needs and provides innovative solutions accordingly. This service was recognized as a best practice
+                            innovation in the 4th ZIA Innovation Report (Germany). In addition, blackprint Booster hosts the REAL PropTech – the leading conference on innovation
+                            & digitization in the real estate industry – and initiated the first PropTech Germany Study in collaboration with an university.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+        <a onclick="openWindow('vladimirvlahovic_info')">
+            <div class="card">
+                <span class="card_inner_side">MORE SOON</span>
+                <button type="button" style="background-image: url('../Resurces/Images/Speakers/2022/Vladimir Vlahovic.jpg');">
+                    <h5 class="speaker_name">Vladimir Vlahovic</h5>
+                    <h6 class="speaker_info">Founder & Managing Director Solventry<br><span>Austria<span></h6>
+                </button>
+            </div>
+        </a>
+
+        <section id="vladimirvlahovic_info" class="pop_up_window_container">
+            <section class="window">
+
+                <div class="top_line">
+                    <a class="close_btn" onclick="closeWindow('vladimirvlahovic_info')">
+                        <img src="../Resurces/Images/Icons/close.png">
+                    </a>
+                </div>
+
+                <div class="content">
+                    <div>
+                        <p class="paragraph">
+                            SOLVENTRY supports construction industry startups to commercialize products and technologies and enter new markets.
+                        </p>
+
+                        <p class="paragraph">
+                            After completing my MSc and BSc studies in civil engineering in Vienna, I worked with prominent Austrian and Swiss contractors and developers.
+                            Mainly, I was involved in international business development.
+                        </p>
+
+                        <p class="paragraph">
+                            Furthermore, as a managing director, I also run Rhomberg Sersa-RZDstroy GmbH, Vienna-based railway technology joint venture between an
+                            Austrian-Swiss construction group and Russian Railways. Among other managerial tasks, I enabled entering new markets and product
+                            commercialisation.
+                        </p>
+
+                        <p class="paragraph">
+                          Afterwards, I moved to Sweden and acted as business developer for Scandinavia for CREE by Rhomberg GmbH, a construction startup developing
+                          timber-hybrid construction technology. This experience was especially beneficial for my MBA studies, in which I specialised in technology
+                          management.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+        <a onclick="">
+            <div class="card">
+                <span class="card_inner_side">MORE SOON</span>
+                <button type="button" style="background-image: url('../Resurces/Images/Speakers/2022/Carles Ribes.jpg');">
+                    <h5 class="speaker_name">Carles Ribes</h5>
+                    <h6 class="speaker_info">City Manager Kodit<br><span>Spain<span></h6>
+                </button>
+            </div>
+        </a>
+
+
+        <a onclick="">
+            <div class="card">
+                <span class="card_inner_side">MORE SOON</span>
+                <button type="button" style="background-image: url('../Resurces/Images/Speakers/2022/Gabriela Roberto.jpg');">
+                    <h5 class="speaker_name">Gabriela Roberto</h5>
+                    <h6 class="speaker_info">Co-Founder Nash21<br><span>Spain<span></h6>
+                </button>
+            </div>
+        </a>
+
+        <a onclick="">
+            <div class="card">
+                <span class="card_inner_side">MORE SOON</span>
+                <button type="button" style="background-image: url('../Resurces/Images/Speakers/2022/Rada Marova.jpg');">
+                    <h5 class="speaker_name">Rada Marova</h5>
+                    <h6 class="speaker_info">Moderator<br><span>Bulgaria<span></h6>
+                </button>
+            </div>
+        </a>
+
+        <!-- <h3 class="in_paragraph_title"><br><br>all speakers will be announced in April 2022</h3> -->
+
+        <!-- <a>
+          <div class="card">
+            <span class="card_inner_side" style="text-align: center; padding: 10%; color: black; font-size: calc(.3vw + 1.6vh)">
+              More speakers will<br>be announced soon.<br>Stay tuned!
+            </span>
+          </div>
+        </a> -->
+
+        <br>
+        <a href="index.html#speakers">
+              <div class="button-container-2">
+                  <span class="mas">Back</span>
+                  <button type="button" name="Hover">Back</button>
+              </div>
+          </a></main>
+
+    <main class="main_container" id="get_proptech_start_on">
+      <video class="full_width_video" controls>
+          <source src="../Resurces/Videos/Render - Final Comp_02.mp4" type="video/mp4">
+      </video></main>
+
+    <main id="footer">
+
+        <div class="footer_content" id="logo_left">
+
+            <div>
+                <img src="../Resurces/Images/Logos/conferenceLogo.png">
+
+                <p>All Rights Reserved. PropTech Bugaria 2018 - 2022</p>
+            </div>
+
+        </div>
+
+        <div class="footer_content" id="links_middle">
+
+            <div>
+                <a class="footer_links" target="_blank" href="../../podcasts.html">
+                    Watch CSEE Podcast
+                    <svg viewBox="0 0 70 10">
+                        <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                    </svg>
+                </a>
+
+                <br>
+                <a class="footer_links" target="_blank" href="../2021/index.html">
+                    Watch 2021 Conference
+                    <svg viewBox="0 0 70 10">
+                        <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                    </svg>
+                </a>
+
+                <br>
+                <a class="footer_links" target="_blank" href="../2021/statsAndPhotos.html">
+                    See 2021 Conference speakers, stats & photos
+                    <svg viewBox="0 0 70 10">
+                        <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                    </svg>
+                </a>
+
+                <br>
+                <a class="footer_links" target="_blank" href="../2022/statsAndPhotos.html">
+                    See 2022 Conference speakers, stats & photos
+                    <svg viewBox="0 0 70 10">
+                        <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                    </svg>
+                </a>
+
+                <br>
+                <a class="footer_links" target="_blank" href="http://proptechbulgaria.eu">
+                    PropTech Bulgaria
+                    <svg viewBox="0 0 70 10">
+                        <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer_content" id="social_media_links_right">
+
+            <div>
+                <a class="social_media_link" target="_blank" href="https://www.facebook.com/proptechbulgaria/"><img src="../Resurces/Images/Icons/facebook.png"></a>
+                <a class="social_media_link" target="_blank" href="https://www.instagram.com/proptech_bulgaria/"><img src="../Resurces/Images/Icons/instagram.png"></a>
+                <a class="social_media_link" target="_blank" href="https://www.linkedin.com/company/proptech-bulgaria/"><img src="../Resurces/Images/Icons/linkedin.png"></a>
+                <a class="social_media_link" target="_blank" href="https://twitter.com/proptech_bg"><img src="../Resurces/Images/Icons/twitter.png"></a>
+                <a class="social_media_link" target="_blank" href="https://www.youtube.com/channel/UC0n_8hJ_opqCj5EBXItahaA"><img src="../Resurces/Images/Icons/youtube.png"></a>
+            </div>
+
+        </div></main>
+
+    <main id="dev_by">
+        <a target="_blank" href="https://www.linkedin.com/in/simeon-kondov-43445a1aa/"><p>Developed by <b>Simeon Kondov</b></p></a></main>
+
+    <a id="scroll_to_top_btn" href="#">
+            <img src="../Resurces/Images/Icons/scrollToTopArrow.png"></a>
+
+  </body>
+</html>

@@ -1,0 +1,38 @@
+.props_container {
+  display: grid;
+  width: 70%;
+  margin: 0 15%;
+  gap: 100px 0px;
+  grid-template-areas:
+    ". . . .";
+}
+
+@media screen and (max-width: 1360px) {
+  .props_container {
+    grid-template-areas:
+      ". ."
+      ". .";
+  }
+}
+
+@media screen and (max-width: 100vh) {
+  .props_container {
+    grid-template-areas:
+      "."
+      "."
+      "."
+      ".";
+  }
+}
+
+.prop_title {
+  font-size: calc(.2vw + 2.3vh + 2px);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--other_color);
+  text-transform: uppercase;
+}
+
+.prop_text {
+  font-size: calc(.3vw + 1.7vh + 2px);
+  font-family: "Poppins";
+}

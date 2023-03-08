@@ -1,0 +1,187 @@
+.button-container-1 {
+ position: relative;
+ width: 30vh;
+ height: calc(.6vw + 4.5vh + 6px);
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 6vh;
+ overflow: hidden;
+ border: .1vh solid;
+ font-family: 'Lato', sans-serif;
+ font-weight: 300;
+ font-size: calc(.2vw + 1.5vh + 2px);
+ transition: 0.5s;
+ letter-spacing: .2vh;
+ border-radius: .8vh;
+}
+
+.button-container-1 button {
+ width: 101%;
+ height: 100%;
+ font-family: 'Lato', sans-serif;
+ font-weight: 300;
+ font-size: calc(.2vw + 1.5vh + 2px);
+ letter-spacing: .2vh;
+ font-weight: bold;
+ background: #000;
+ -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+ mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+ -webkit-mask-size: 2300% 100%;
+ mask-size: 2300% 100%;
+ border: none;
+ color: #fff;
+ cursor: pointer;
+ -webkit-animation: ani2 0.7s steps(22) forwards;
+ animation: ani2 0.7s steps(22) forwards;
+}
+
+.button-container-1 button:hover {
+ -webkit-animation: ani 0.7s steps(22) forwards;
+ animation: ani 0.7s steps(22) forwards;
+}
+
+.button-container-2 {
+ position: relative;
+ width: 30vh;
+ height: calc(.6vw + 4.5vh + 6px);
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 7vh;
+ overflow: hidden;
+ border: .1vh solid var(--other_color);
+ font-family: 'Lato', sans-serif;
+ font-weight: 300;
+ transition: 0.5s;
+ letter-spacing: .2vh;
+ border-radius: .8vh;
+}
+
+.button-container-2 button {
+ width: 101%;
+ height: 100%;
+ font-family: 'Lato', sans-serif;
+ font-weight: 300;
+ font-size: calc(.2vw + 1.5vh + 2px);
+ letter-spacing: .1vh;
+ font-weight: bold;
+ background: var(--other_color);
+ -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+ mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+ -webkit-mask-size: 3000% 100%;
+ mask-size: 3000% 100%;
+ border: none;
+ color: #000;
+ cursor: pointer;
+ -webkit-animation: ani2 0.7s steps(29) forwards;
+ animation: ani2 0.7s steps(29) forwards;
+}
+
+.button-container-2 button:hover {
+ -webkit-animation: ani 0.7s steps(29) forwards;
+ animation: ani 0.7s steps(29) forwards;
+}
+
+.mas {
+ position: absolute;
+ top: calc(.2vw + 1.5vh + 2px);
+ color: var(--light_color);
+ text-align: center;
+ width: 101%;
+ font-family: 'Lato', sans-serif;
+ font-weight: 300;
+ position: absolute;
+ font-size: calc(.2vw + 1.3vh);
+ overflow: hidden;
+ font-weight: bold;
+}
+
+@-webkit-keyframes ani {
+ from {
+	 -webkit-mask-position: 0 0;
+	 mask-position: 0 0;
+}
+ to {
+	 -webkit-mask-position: 100% 0;
+	 mask-position: 100% 0;
+}
+}
+
+@keyframes ani {
+ from {
+	 -webkit-mask-position: 0 0;
+	 mask-position: 0 0;
+}
+ to {
+	 -webkit-mask-position: 100% 0;
+	 mask-position: 100% 0;
+}
+}
+
+@-webkit-keyframes ani2 {
+ from {
+	 -webkit-mask-position: 100% 0;
+	 mask-position: 100% 0;
+}
+ to {
+	 -webkit-mask-position: 0 0;
+	 mask-position: 0 0;
+}
+}
+
+@keyframes ani2 {
+ from {
+	 -webkit-mask-position: 100% 0;
+	 mask-position: 100% 0;
+}
+ to {
+	 -webkit-mask-position: 0 0;
+	 mask-position: 0 0;
+}
+}
+
+.button-container-3 {
+ position: relative;
+ width: 30vh;
+ height: calc(.6vw + 4.5vh + 6px);
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 8vh;
+ overflow: hidden;
+ border: .1vh solid #000;
+ font-family: 'Lato', sans-serif;
+ font-weight: 300;
+ transition: 0.5s;
+ letter-spacing: .1vh;
+ border-radius: .8vh;
+}
+
+.button-container-3 button {
+ width: 101%;
+ height: 100%;
+ font-family: 'Lato', sans-serif;
+ font-weight: 300;
+ font-size: calc(.2vw + 1.5vh + 2px);
+ letter-spacing: .1vh;
+ font-weight: bold;
+ background: #000;
+ -webkit-mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+ mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+ -webkit-mask-size: 7100% 100%;
+ mask-size: 7100% 100%;
+ border: none;
+ color: #fff;
+ cursor: pointer;
+ -webkit-animation: ani2 0.7s steps(70) forwards;
+ animation: ani2 0.7s steps(70) forwards;
+}
+
+.button-container-3 button:hover {
+ -webkit-animation: ani 0.7s steps(70) forwards;
+ animation: ani 0.7s steps(70) forwards;
+}
+
+@media screen and (max-width: 100vh) {
+   .button-container-1, .button-container-2, .button-container-3 {
+     width: 86vw !important;
+  }
+}

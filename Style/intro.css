@@ -1,0 +1,120 @@
+#intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  color: white;
+  text-align: center;
+  font-size: 5vh;
+  animation: intro 3s forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes intro {
+  0%   { top: 0; }
+  70%   { top: 0; }
+  100% { top: -100%; }
+}
+
+#slider_1 {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(26, 129, 143, .98);
+  animation: intro 2.5s forwards;
+  animation-timing-function: ease-in-out;
+}
+
+#slider_2 {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(150, 150, 150, .9);
+  z-index: -1;
+  animation: slider 3s forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slider {
+  0%   { top: 0; }
+  80%   { top: 0; }
+  100% { top: -100%; }
+}
+
+#intro_logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-grid;
+  width: 40%;
+  height: 100%;
+  place-items: center;
+  animation: intro_logo 2.5s forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes intro_logo {
+  0%   { opacity: 1; }
+  60%   { opacity: 1; }
+  80%   { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+#intro_logo img {
+  width: 20vw;
+}
+
+#intro_title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-grid;
+  width: 60%;
+  height: 100%;
+  align-items: center;
+  text-align: left;
+}
+
+#intro_title_container {
+}
+
+.intro_title {
+  display: inline-block;
+  width: 100%;
+  height: 10vh;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.intro_title span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: intro_text 2s forwards;
+  animation-timing-function: ease-in-out;
+  font-family: Arial;
+  -webkit-text-stroke: .1vh rgb(153, 204, 255);
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+
+.intro_title span b {
+  -webkit-text-stroke: .1vh rgb(255, 179, 26);
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+
+@keyframes intro_text {
+  0%   { top: 0; }
+  80%   { top: 0; }
+  100% { top: -100%; }
+}

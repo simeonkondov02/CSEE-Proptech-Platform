@@ -1,0 +1,36 @@
+.productions {
+  display: inline-block;
+  width: 80%;
+  height: fit-content;
+}
+
+.production:hover {
+  border: .1vh solid var(--color);
+}
+
+.production button {
+  background-size: contain !important;
+  background-position: top;
+  background-color: var(--background_color);
+}
+
+.card_title {
+  display: grid;
+  width: 101%;
+  height: 10vh;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 2vh 1vh 0 1vh;
+  font-size: calc(.2vw + 1.2vh + 1px);
+  font-weight: normal;
+  text-transform: uppercase;
+  background-color: var(--background_color);
+  z-index: 1;
+}
+
+@media screen and (max-width: 100vh) {
+  .productions {
+    width: 90%;
+  }
+}
